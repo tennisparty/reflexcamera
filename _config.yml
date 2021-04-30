@@ -4,7 +4,7 @@ email: your-email@domain.com
 url: https://tennisparty.github.io/grayscale-theme/
 #added below
 baseurl: /grayscale-theme
-description: "A custom designed nocturnal wildlife camera for bat roosts in trees. The camera detects ultra-fast motion events at night and can detect bats emerging and re-entering tree roosts"
+description: "A custom designed nocturnal wildlife camera for bat roosts in trees. The camera detects ultra-fast motion events at night and is proven to sucessfully record bats emerging and re-entering tree roosts"
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
