@@ -132,7 +132,10 @@ a:focus {
 }
 
 .list {
-    list-style-position: inside;
+/*    list-style-position: inside;*/ p
+    text-align: center;
+    transform: translateX(-50%);
+    margin-left: 50%;
 }
     
 .intro {
