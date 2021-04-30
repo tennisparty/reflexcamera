@@ -131,6 +131,10 @@ a:focus {
     }
 }
 
+.list {
+    text-align: center;;
+}
+    
 .intro {
     display: table;
     width: 100%;
