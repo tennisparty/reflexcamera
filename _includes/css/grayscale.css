@@ -295,6 +295,11 @@ a:focus {
     }
 }
 
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
 .btn {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
