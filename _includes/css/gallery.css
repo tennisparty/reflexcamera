@@ -90,4 +90,7 @@ img.img2 {
   margin: auto;
   display: block;*/
   width: 100%;
+  height: -webkit-fill-available;
+  display: block;
+  margin: auto;
 }
