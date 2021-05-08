@@ -73,6 +73,7 @@
 .column {
   float: left;
   width: 16.66%;
+  height: 150px;
 }
 
 /* Add a transparency effect for thumnbail images */
@@ -93,10 +94,14 @@ img.img2 {
   margin: auto;*/
 }
 
-.mySlides {
-  height: 400px;
+img.img3 {
+  width: 100%;
+  height: -webkit-fill-available;
+  object-fit: contain;
+  /*display: block;
+  margin: auto;*/
 }
 
-.row {
-  height:200px;
+.mySlides {
+  height: 400px;
 }
