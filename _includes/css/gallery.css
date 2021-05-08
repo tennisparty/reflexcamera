@@ -86,10 +86,11 @@
 }
 
 img.img2 {
-/*width: 100%;*/
+  width: 100%;
   height: -webkit-fill-available;
-  display: block;
-  margin: auto;
+  object-fit: contain;
+  /*display: block;
+  margin: auto;*/
 }
 
 .mySlides {
