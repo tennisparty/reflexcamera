@@ -1,6 +1,8 @@
 Grayscale Jekyll theme
 =========================
 
+[Reflex website hosted ] (https://tennisparty.github.io/grayscale-theme/)
+
 Jekyll theme based on [Grayscale bootstrap theme ](http://ironsummitmedia.github.io/startbootstrap-grayscale/)
 
 ## Demo
