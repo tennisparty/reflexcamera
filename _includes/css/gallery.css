@@ -94,3 +94,7 @@ img.img2 {
   display: block;
   margin: auto;
 }
+
+.mySlides {
+  height: 400px;
+}
