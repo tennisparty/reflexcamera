@@ -86,10 +86,7 @@
 }
 
 img.img2 {
-  /*height: 300px;
-  margin: auto;
-  display: block;*/
-  width: 100%;
+/*width: 100%;*/
   height: -webkit-fill-available;
   display: block;
   margin: auto;
