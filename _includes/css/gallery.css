@@ -84,3 +84,9 @@
 .demo:hover {
   opacity: 1;
 }
+
+.img2 {
+  height: 400px;
+  margin: auto;
+  display: block;
+}
