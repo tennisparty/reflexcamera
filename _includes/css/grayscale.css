@@ -40,7 +40,6 @@ listheading {
 
 Plist {
     margin: 0 0 0px;
-    font-size: 18px;
     line-height: 1.5;
 } 
 
@@ -152,7 +151,7 @@ a:focus {
     margin-left: 50%;
     https://teamtreehouse.com/community/styling-list-bullet-points-in-css#:~:text=Luckily%20though%2C%20CSS%20provides%20us,text%2Dalign%3A%20center%3B
     margin: 0 0 25px;*/
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5;
 }
     
