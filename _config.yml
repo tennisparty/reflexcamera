@@ -1,9 +1,9 @@
 # Site settings
 title: REFLEX
 email: your-email@domain.com
-url: https://tennisparty.github.io/grayscale-theme/
+url: https://tennisparty.github.io/reflexcamera/
 #added below
-baseurl: /grayscale-theme
+baseurl: /reflexcamera
 description: "A nocturnal wildlife camera designed specifically for recording bat roosts in trees. The camera detects ultra-fast motion events at night and records bats emerging and re-entering from tree roosts."
 
 # Color settings (hex-codes without the leading hash-tag)
