@@ -146,8 +146,8 @@ a:focus {
 }
 
 .list {
-    list-style-position: inside;
-/*    text-align: center;
+/*    list-style-position: inside;
+    text-align: center;
     transform: translateX(-50%);
     margin-left: 50%;
     https://teamtreehouse.com/community/styling-list-bullet-points-in-css#:~:text=Luckily%20though%2C%20CSS%20provides%20us,text%2Dalign%3A%20center%3B
