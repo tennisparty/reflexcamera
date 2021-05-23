@@ -1,4 +1,6 @@
     <!-- Contact Section -->
+    <input type="hidden" name="options[reCaptcha][siteKey]" value="YOUR-SITE-KEY">
+    <input type="hidden" name="options[reCaptcha][secret]" value="YOUR-ENCRYPTED-SECRET">
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
@@ -10,6 +12,8 @@
                   <label for="lname">Last name:</label><br>
                   <input type="text" id="lname" name="lname">
                 </form>
+                <div class="g-recaptcha" data-sitekey="YOUR-SITE-KEY"></div>
+                <script src='https://www.google.com/recaptcha/api.js'></script>
                 <!-- <p><a href="mailto:{{ site.email }}">{{ site.email }}</a>
                 </p>
                 <ul class="list-inline banner-social-buttons">
