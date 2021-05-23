@@ -42,3 +42,10 @@ permalink: pretty
 # for me, this line reads:
 # https://staticman-travisdownsio.herokuapp.com/v2/entry/travisdowns/travisdowns.github.io/master/comments
 staticman_url: https://staticman-reflex.herokuapp.com/v2/entry/tennisparty/reflexcamera/master/comments
+
+# reCaptcha configuration info: the exact same site key and *encrypted* secret that you used in staticman.yml
+# I personally don't think the secret needs to be included in the generated site, but the staticman API bridge uses
+# it to ensure the site configuration and bridge configuration match (but why not just compare the site key?)
+reCaptcha:
+  siteKey: 6LfYwuYaAAAAAAN01_bqJ3oQ-0Zybq0oRG-YGYNE
+  secret: 46EXRfwuxPb7LHVg2Dauo5JKCzflE5dhgGPAfQsScqxxGXT+xUc5N6XbGtsaOBpE+C1LuISmozj74dJ9kX0LRPKYB7JYbSt3SKitN1lQCGhXpqHSE2BXktG9Ap0r0ai7yUvziRC1ibFTwIlB6iEpjs1cUJuOZ/DPI9afXEZBMKZ8rIm6DoQ6PhlNDBT7aHElLegFgfk7051LIPniHO5MGrKVXCoxCq97YlxYFYyLOOrtgG1WgyUYvGBy6bpURLKRPuoToT3vkEl1joRNyIqbLfaV1PbYbfQ+VETW6ZSsTnmshQdSOQSi9bW+x+k/YLjpUS34GjdOVcgo/rt3Y+SYAgcoSsjYBM7eToSYPWGr5zzJ6ThsuzGsxz77FCUsujONejYrwAqLSyblEZjUreSAsLcxmcC4zlPlNufW8yN+I51+zugAWVHslQrDlBcoGhJuU3ZBvhFOiel3ePLz7kI7CRqtM/mIrYxu1wr5v3L3DeNcP0MGTZwiqBCVTG0MLos6absstZzX2qk8wgYKA0Zkx4p6GUa3ZGWsphVRRoUtLM4CgL5bBDDgnY288SqvEI4OY+SYJxmKXwHD9pmqFu9qTRsnOjJmmEgpP1tdcYG8PQY2ky1f5FTnAA8MaonFsuYYa2/3K3nBBbCoYrLurx0+RXjFgBa8YxKnSMwuyTYJUsc=
