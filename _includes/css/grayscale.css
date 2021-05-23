@@ -240,6 +240,11 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
+input {
+  width: 100%;
+  
+}
+
 @-webkit-keyframes pulse {    
     0 {
         -webkit-transform: scale(1);
