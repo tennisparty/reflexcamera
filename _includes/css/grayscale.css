@@ -242,7 +242,7 @@ a:focus {
 
 input {
   width: 100%;
-  
+  color: black;
 }
 
 @-webkit-keyframes pulse {    
