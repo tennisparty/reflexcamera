@@ -251,7 +251,7 @@ button {
 }
 
 .g-recaptcha {
-  align-content: center;
+  display: inline-block;
 }
 
 @-webkit-keyframes pulse {    
