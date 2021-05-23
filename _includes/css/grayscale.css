@@ -241,8 +241,12 @@ a:focus {
 }
 
 input {
-  width: 100%;
+/*  width: 100%; */
   color: black;
+}
+
+g-recaptcha {
+  align-content: center;
 }
 
 @-webkit-keyframes pulse {    
