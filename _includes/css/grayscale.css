@@ -245,6 +245,11 @@ input {
   color: black;
 }
 
+button {
+/*  width: 100%; */
+  color: black;
+}
+
 g-recaptcha {
   align-content: center;
 }
