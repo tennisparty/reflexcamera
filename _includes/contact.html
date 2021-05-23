@@ -3,8 +3,14 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Contact</h2>
-                <p>For further details please contact me<!-- at:</p>
-                <p><a href="mailto:{{ site.email }}">{{ site.email }}</a>
+                <p>For further details please contact me</p>
+                <form>
+                  <label for="fname">First name:</label><br>
+                  <input type="text" id="fname" name="fname"><br>
+                  <label for="lname">Last name:</label><br>
+                  <input type="text" id="lname" name="lname">
+                </form>
+                <!-- <p><a href="mailto:{{ site.email }}">{{ site.email }}</a>
                 </p>
                 <ul class="list-inline banner-social-buttons">
                     {% for network in site.social %}
