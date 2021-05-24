@@ -252,6 +252,7 @@ button {
 
 .g-recaptcha {
   display: inline-block;
+  margin-bottom: 15px;
 }
 
 @-webkit-keyframes pulse {    
