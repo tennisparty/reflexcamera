@@ -289,6 +289,10 @@ button {
     }
 }
 
+.buttons-container button {
+    margin: 5px; /* Adjust the value to control the amount of space around each button */
+}
+
 .content-section {
     padding-top: 10px;
 }
