@@ -74,9 +74,9 @@
 
                     <a tabindex="0" class="btn btn-info opacity-50" data-bs-toggle="popover" data-trigger="manual" data-bs-title="Monitoring tree and building mitigation/exclusion and disturbance" data-bs-content="Lorem ipsum dolor sit amet.">Monitoring tree and building mitigation/exclusion and disturbance</a>
 
-                    <a tabindex="0" class="btn btn-info opacity-50" data-bs-container="body" data-bs-toggle="popover" data-trigger="manual" data-bs-title="Identifying movements of bats across woodlands" data-bs-content="Lorem ipsum dolor sit amet.">Identifying movements of bats across woodlands</a>
+                    <a tabindex="0" class="btn btn-info opacity-50" data-bs-toggle="popover" data-trigger="manual" data-bs-title="Identifying movements of bats across woodlands" data-bs-content="Lorem ipsum dolor sit amet.">Identifying movements of bats across woodlands</a>
 
-                    <a tabindex="0" class="btn btn-info opacity-50" data-bs-container="body" data-bs-toggle="popover" data-trigger="manual" data-bs-title="Potential for recording other wildlife such as swifts, dormice and amphibians" data-bs-content="Lorem ipsum dolor sit amet.">Potential for recording other wildlife such as swifts, dormice and amphibians</a>
+                    <a tabindex="0" class="btn btn-info opacity-50" data-bs-toggle="popover" data-trigger="manual" data-bs-title="Potential for recording other wildlife such as swifts, dormice and amphibians" data-bs-content="Lorem ipsum dolor sit amet.">Potential for recording other wildlife such as swifts, dormice and amphibians</a>
                 </div>
 
             </div>
@@ -95,7 +95,7 @@
           popovers.forEach(function (popover) {
             let popoverInstance = new bootstrap.Popover(popover);
       
-            popover.addEventListener('click', function () {
+            function showPopover() {
               // Hide all other popovers
               popovers.forEach(function (otherPopover) {
                 if (otherPopover !== popover) {
@@ -106,9 +106,13 @@
                 }
               });
       
-              // Toggle the clicked popover
-              popoverInstance.toggle();
-            });
+              // Show the popover
+              popoverInstance.show();
+            }
+      
+            popover.addEventListener('click', showPopover);
+            popover.addEventListener('focus', showPopover);
           });
         });
       </script>
+      
