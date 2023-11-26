@@ -95,15 +95,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
 
     <script>
-    // Popovers initialization
-    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-        return new bootstrap.Popover(popoverTriggerEl)
-    });
-    </script>
+        $(document).ready(function () {
+            // Popovers initialization
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                var popover = new bootstrap.Popover(popoverTriggerEl);
 
-    <script>
-    const popover = new bootstrap.Popover('.popover-dismiss', {
-    trigger: 'focus'
-    })
+                // Prevent closing when releasing the mouse button
+                $(popoverTriggerEl).on('shown.bs.popover', function () {
+                    $('.popover').on('mouseup', function () {
+                        return false;
+                    });
+                });
+
+                return popover;
+            });
+        });
     </script>
