@@ -91,13 +91,13 @@
                 </div>
 
                 <div class="buttons-container">
-                    <p data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover content" data-bs-trigger="manual" class="d-inline-block">
-                        Service Ports 1
+                    <p data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover content <button type='button' class='close' onclick='closePopover()'>×</button>" data-bs-trigger="manual" class="d-inline-block">
+                      Service Ports 1
                     </p>
-                    <p data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover content" data-bs-trigger="manual" class="d-inline-block">
-                        Service Ports 4
+                    <p data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover content <button type='button' class='close' onclick='closePopover()'>×</button>" data-bs-trigger="manual" class="d-inline-block">
+                      Service Ports 2
                     </p>
-                </div>
+                  </div>
 
             </div>
         </div>
@@ -109,35 +109,38 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
 
     <script>
-    // Popovers initialization
-    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-        return new bootstrap.Popover(popoverTriggerEl)
-    });
-    </script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
+    function closePopover() {
         const popovers = document.querySelectorAll('[data-bs-toggle="popover"]');
-    
         popovers.forEach(function (popover) {
-            let popoverInstance = new bootstrap.Popover(popover);
-    
-            popover.addEventListener('click', function () {
+        const popoverInstance = bootstrap.Popover.getInstance(popover);
+        if (popoverInstance) {
+            popoverInstance.hide();
+        }
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const popovers = document.querySelectorAll('[data-bs-toggle="popover"]');
+
+        popovers.forEach(function (popover) {
+        let popoverInstance = new bootstrap.Popover(popover, {
+            html: true, // Enable HTML content
+        });
+
+        popover.addEventListener('click', function () {
             // Hide all other popovers
             popovers.forEach(function (otherPopover) {
-                if (otherPopover !== popover) {
+            if (otherPopover !== popover) {
                 const otherPopoverInstance = bootstrap.Popover.getInstance(otherPopover);
                 if (otherPopoverInstance) {
-                    otherPopoverInstance.hide();
+                otherPopoverInstance.hide();
                 }
-                }
+            }
             });
-    
+
             // Toggle the clicked popover
             popoverInstance.toggle();
-            });
         });
         });
+    });
     </script>
-
