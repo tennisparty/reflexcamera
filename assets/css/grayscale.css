@@ -289,9 +289,9 @@ button {
     }
 }
 
-.buttons-container a {
-    margin: 5px; /* Adjust the value to control the amount of space around each button */
-    margin-top: 5px;
+
+div.buttons-container a.btn {
+    margin: 5px !important;
 }
 
 .content-section {
