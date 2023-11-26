@@ -103,8 +103,20 @@
     </script>
 
     <script>
-    const popover = new bootstrap.Popover('.popover-dismiss', {
-    trigger: 'focus'
-    })
-    </script>
+        document.addEventListener('click', function (event) {
+        var clickedElement = event.target;
 
+        // Check if the clicked element is outside the popover container
+        var popoverContainer = document.querySelector('.buttons-container');
+        if (!popoverContainer.contains(clickedElement)) {
+            // Close any open popovers
+            var popovers = document.querySelectorAll('.popover');
+            popovers.forEach(function (popover) {
+            var popoverInstance = bootstrap.Popover.getInstance(popover);
+            if (popoverInstance) {
+                popoverInstance.hide();
+            }
+            });
+        }
+        });
+    </script>
