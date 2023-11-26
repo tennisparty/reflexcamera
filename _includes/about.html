@@ -90,13 +90,14 @@
                     <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover 2" data-bs-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover 3</a>
                 </div>
 
-                <p data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover" data-bs-trigger="hover" class="d-inline-block">
-                    Service Ports
-                </p>
-                <p data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popoverz" data-bs-trigger="click" class="d-inline-block">
-                    Service Ports 2
-                </p>
-            </div>
+                <div class="buttons-container">
+                    <p data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover content" data-bs-trigger="manual" class="d-inline-block">
+                        Service Ports 1
+                    </p>
+                    <p data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover content" data-bs-trigger="manual" class="d-inline-block">
+                        Service Ports 2
+                    </p>
+                </div>
 
             </div>
         </div>
@@ -116,8 +117,27 @@
     </script>
 
     <script>
-    const popover = new bootstrap.Popover('.popover-dismiss', {
-    trigger: 'focus'
-    })
+        document.addEventListener('DOMContentLoaded', function () {
+        const popovers = document.querySelectorAll('[data-bs-toggle="popover"]');
+    
+        popovers.forEach(function (popover) {
+            let popoverInstance = new bootstrap.Popover(popover);
+    
+            popover.addEventListener('click', function () {
+            // Hide all other popovers
+            popovers.forEach(function (otherPopover) {
+                if (otherPopover !== popover) {
+                const otherPopoverInstance = bootstrap.Popover.getInstance(otherPopover);
+                if (otherPopoverInstance) {
+                    otherPopoverInstance.hide();
+                }
+                }
+            });
+    
+            // Toggle the clicked popover
+            popoverInstance.toggle();
+            });
+        });
+        });
     </script>
 
