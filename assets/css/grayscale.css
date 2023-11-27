@@ -355,7 +355,7 @@ div.buttons-container a.btn {
     transition: all .3s ease-in-out;
 }
 
-.btn-default {
+.btn-default2 {
     border: 1px solid {{ site.color.links }};
     color: {{ site.color.links }};
     background-color: rgba({{ site.color.links }}, 0.75); /* Set opacity to 75% */
