@@ -354,7 +354,7 @@ div.buttons-container a.btn {
 .btn-default {
     border: 1px solid {{ site.color.links }};
     color: {{ site.color.links }};
-    background-color: transparent;
+    background-color: rgba({{ site.color.links }}, 0.75); /* Set opacity to 75% */
 }
 
 .btn-default:hover,
