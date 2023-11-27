@@ -342,6 +342,10 @@ div.buttons-container a.btn {
   height: auto;
 }
 
+.custom-margin {
+    margin: 20px;
+}
+
 .btn {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
