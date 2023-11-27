@@ -343,6 +343,10 @@ div.buttons-container a.btn {
 }
 
 .element-margin {
+    margin: 5px;
+}
+
+.element-margin-wide {
     margin: 20px;
 }
 
