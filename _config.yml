@@ -31,6 +31,8 @@ social:
 markdown: kramdown
 permalink: pretty
 
+ASSET_PATH : /assets
+
 # The URL for the staticman API bridge endpoint
 # You will want to modify some of the values:
 #  ${github-username}: the username of the account with which you publish your blog
