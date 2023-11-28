@@ -205,6 +205,11 @@ a:focus {
     /* margin-bottom: 0.5rem; */
 }
 
+.spaced-button {
+    margin: 1rem;
+    /* margin-bottom: 0.5rem; */
+}
+
 .form-label2 {
     font-size: 1.25rem;
 }
