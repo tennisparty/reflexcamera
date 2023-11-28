@@ -200,6 +200,15 @@ a:focus {
     }
 }
 
+.condensed-para {
+    margin-bottom: 0rem;
+    /* margin-bottom: 0.5rem; */
+}
+
+.form-label {
+    font-size: 1.25rem;
+}
+
 .btn-circle {
     width: 70px;
     height: 70px;
