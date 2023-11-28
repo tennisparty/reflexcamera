@@ -4,7 +4,8 @@
             <div class="container">
                 <div class="col-lg-8 offset-lg-2">
                     <h2>Setup</h2>
-                        <listheading>Battery</listheading>
+                    <listheading>Battery</listheading>
+                    <div class="m-3">
                         <p class="condensed-para">The system runs on a 12v battery which must be bought seperately. The system can run on any battery chemistry which gives great flexibility, a very basic chemistry comparison is provided below:</p>
                         <div class="buttons-container">
                             <a tabindex="13" class="btn btn-info opacity-50" data-bs-custom-class="custom-popover" data-bs-toggle="popover" data-trigger="manual" data-bs-title="Lithium-ion" data-bs-content="Lithium-ion batteries are lighter, last much longer, are easier to maintain and maintain charge in cold temperatures. They are are more expensive for the equivalent capacity at the outset">Lithium-ion</a>
@@ -13,17 +14,20 @@
 
                             <a tabindex="14" class="btn btn-info opacity-50" data-bs-custom-class="custom-popover" data-bs-toggle="popover" data-trigger="manual" data-bs-title="Gel" data-bs-content="Gel batteries are often a similar price to lead-acid batteries. They are more susceptible to losing charge in the cold">Gel</a>
                         </div>
+                    </div>
+                    <div class="m-3">
                         <div class="container">
                             <p class="condensed-para">The system run time is dependent on the amp hours of the battery. The actual run time will be dependent on the battery temperature and night length. Enter the amp hours below to estimate the run time:</p>
                             <div class="m-3">
-                                <label for="ampHours" class="form-label">Amp Hours:</label>
+                                <label for="ampHours" class="form-label form-label2">Amp Hours:</label>
                                 <!-- Add Bootstrap classes to the input box -->
                                 <input type="number" class="form-control" id="ampHours" step="any" placeholder="Enter amp hours">
                             </div>
                             <button class="btn btn-primary" onclick="calculateRunTime()">Calculate Run Time</button>
                             <p id="result" class="mt-3"></p>
                         </div>
-                    <p id="result"></p>
+                        <p id="result"></p>
+                    </div>
                 </div>
             </div>
         </div>
