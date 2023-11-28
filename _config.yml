@@ -31,8 +31,6 @@ social:
 markdown: kramdown
 permalink: pretty
 
-# added in 2023 to try and locate bootstrap.min.css
-ASSET_PATH : /assets
 
 # The URL for the staticman API bridge endpoint
 # You will want to modify some of the values:
