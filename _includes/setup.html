@@ -10,15 +10,38 @@
                     <br>
                     <br>
                     The system run time is dependent on the amp hours of the battery. The actual run time will be dependent on the battery temperature and night length. Some indicative run times are given below:</p>
-                    <div class="list">
+                    <!-- <div class="list">
                         <ul>
                             <li>6ah (12v) - lasts for 1 night</li>
                             <li>50ah (12v) - lasts for 8 nights</li>
                             <li>100ah (12v) - lasts for 16 nights</li>
                             <li>200ah (12v) - lasts for 32 nights</li>
                         </ul>
-                    </div>
+                    </div> -->
+                    <label for="ampHours">Amp Hours:</label>
+                    <input type="number" id="ampHours" step="any" placeholder="Enter amp hours">
+                  
+                    <button onclick="calculateRunTime()">Calculate Run Time</button>
+                  
+                    <p id="result"></p>
                 </div>
             </div>
         </div>
     </section>
+
+    <script>
+        function calculateRunTime() {
+          // Get the amp hours input value
+          var ampHours = parseFloat(document.getElementById('ampHours').value);
+    
+          // Define the base values
+          var baseAmpHours = 50; // 50ah as the base value
+          var baseRunTime = 8;   // 8 nights as the base value
+    
+          // Calculate the run time based on the ratio
+          var calculatedRunTime = (ampHours / baseAmpHours) * baseRunTime;
+    
+          // Display the result
+          document.getElementById('result').innerHTML = 'Estimated run time: ' + calculatedRunTime.toFixed(2) + ' nights';
+        }
+      </script>
