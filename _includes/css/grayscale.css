@@ -47,11 +47,8 @@ img.logo-img-small {
     max-height: 12vw;
     width: auto;
     /* max-width: 100%; */
-    position: relative;
+    /* position: relative; */
 }
-
-
-
 
 .navbar-nav .nav-link {
     font-size: 1.5rem;
