@@ -4,6 +4,82 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+/* sam added */
+#mySpecialColumn {
+    position: relative;
+}
+
+#mySpecialColumn img.logo-img {
+    max-height: 4.5vw;
+    width: auto;
+    /* max-width: 100%; */
+    position: relative;
+}
+
+img.logo-img-small {
+    display: none;
+    }
+
+@media screen and (max-width: 760px) {
+    /* #mySpecialColumn {
+    position: static!important;
+    } */
+    #mySpecialColumn {
+    display: none;
+    }
+    #mySpecialColumn2 {
+    display: none;
+    }
+    #mySpecialColumn img.logo-img {
+    min-width: auto;
+    }
+    img.logo-img-small {
+    display: flex!important;
+    max-height: 5vw;
+    width: auto;
+    align-self: flex-end; /* Align the image based on its bottom */
+    min-height: 2.25rem;
+    margin: 0 1rem; /* Adjust the margin on left and right*/
+    }
+}
+
+#mySpecialColumnmd img.logo-img-md {
+    max-height: 2.5vw;
+    width: auto;
+    /* max-width: 100%; */
+    position: relative;
+}
+
+img.logo-img-small {
+    display: none;
+    }
+
+@media screen and (max-width: 760px) {
+    /* #mySpecialColumn {
+    position: static!important;
+    } */
+    #mySpecialColumnmd {
+    display: none;
+    }
+    #mySpecialColumn img.logo-img-md {
+    min-width: auto;
+    }
+    img.logo-img-small {
+    display: flex!important;
+    max-height: 5vw;
+    width: auto;
+    align-self: flex-end; /* Align the image based on its bottom */
+    min-height: 2.25rem;
+    margin: 0 1rem; /* Adjust the margin on left and right*/
+    }
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.5rem;
+}
+/* sam added */
+
+
 body {
     width: 100%;
     height: 100%;
