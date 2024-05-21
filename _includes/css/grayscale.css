@@ -44,35 +44,14 @@ img.logo-img-small {
 }
 
 #mySpecialColumnmd img.logo-img-md {
-    max-height: 2.5vw;
+    max-height: 12vw;
     width: auto;
     /* max-width: 100%; */
     position: relative;
 }
 
-img.logo-img-small {
-    display: none;
-    }
 
-@media screen and (max-width: 760px) {
-    /* #mySpecialColumn {
-    position: static!important;
-    } */
-    #mySpecialColumnmd {
-    display: none;
-    }
-    #mySpecialColumn img.logo-img-md {
-    min-width: auto;
-    }
-    img.logo-img-small {
-    display: flex!important;
-    max-height: 5vw;
-    width: auto;
-    align-self: flex-end; /* Align the image based on its bottom */
-    min-height: 2.25rem;
-    margin: 0 1rem; /* Adjust the margin on left and right*/
-    }
-}
+
 
 .navbar-nav .nav-link {
     font-size: 1.5rem;
