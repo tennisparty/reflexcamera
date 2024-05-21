@@ -1,4 +1,45 @@
- <!-- Navigation -->
+
+<style>
+    #mySpecialColumn {
+      position: absolute;
+    }
+
+    #mySpecialColumn img.logo-img {
+      max-height: 5vw;
+      width: auto;
+      /* max-width: 100%; */
+      position: relative;
+    }
+
+    img.logo-img-small {
+        display: none;
+      }
+
+    @media screen and (max-width: 760px) {
+      /* #mySpecialColumn {
+        position: static!important;
+      } */
+      #mySpecialColumn {
+        display: none;
+      }
+      #mySpecialColumn2 {
+        display: none;
+      }
+      #mySpecialColumn img.logo-img {
+        min-width: auto;
+      }
+      img.logo-img-small {
+        display: flex!important;
+        max-height: 5vw;
+        width: auto;
+        align-self: flex-end; /* Align the image based on its bottom */
+        min-height: 2.25rem;
+        margin: 0 1rem; /* Adjust the margin on left and right*/
+      }
+    }
+
+</style>
+<!-- Navigation -->
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
         <div class="container">
