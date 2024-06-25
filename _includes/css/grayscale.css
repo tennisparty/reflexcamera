@@ -221,6 +221,14 @@ a:focus {
     -o-background-size: cover;
 }
 
+/* Styles for smaller screens (e.g., phones) */
+@media only screen and (max-width: 760px) {
+    .intro {
+        background: url(/img/SmithWellsBechReentrymob.png) no-repeat bottom center scroll;
+        background-size: cover; /* Adjust as needed */
+    }
+}
+
 .intro .intro-body {
     display: table-cell;
     vertical-align: middle;
