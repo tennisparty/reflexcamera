@@ -222,7 +222,7 @@ a:focus {
 }
 
 /* Styles for smaller screens (e.g., phones) */
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 800px) {
     .intro {
         background: url(/img/SmithWellsBechReentrymob.png) no-repeat bottom center scroll;
         background-size: cover; /* Adjust as needed */
