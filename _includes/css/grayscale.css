@@ -375,22 +375,17 @@ div.buttons-container a.btn {
     /* --bs-popover-header-color: var(--bs-white); */
   }
 
-  .video-section {
+.video-section {
     width: 100%;
     padding: 50px 0;
     color: #fff;
     background: url(/img/BechinvestBW.png) no-repeat bottom center scroll;
+    background-position: 20% 80% !important;
     background-color: {{ site.color.primary-dark }};
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-}
-
-@media only screen and (max-width: 767px) {
-    .video-section {
-        background-position: bottom 80% !important;
-    }
 }
 
 #map {
