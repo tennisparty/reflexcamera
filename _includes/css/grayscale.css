@@ -380,7 +380,7 @@ div.buttons-container a.btn {
     padding: 50px 0;
     color: #fff;
     background: url(/img/BechinvestBW.png) no-repeat scroll;
-    background-position: 25% 40%;
+    background-position: 40% 40%;
     background-color: {{ site.color.primary-dark }};
     -webkit-background-size: cover;
     -moz-background-size: cover;
