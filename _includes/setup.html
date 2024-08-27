@@ -10,14 +10,14 @@
                         <div class="buttons-container">
                             <a tabindex="13" class="btn btn-info opacity-75" data-bs-custom-class="custom-popover" data-bs-toggle="popover" data-trigger="manual" data-bs-title="Lithium-ion" data-bs-content="Lithium-ion batteries are lighter, easier to maintain and retain good capacity for years. This chemistry can maintain charge even in cold temperatures. Lithium-ion batteries are more expensive than their (lead-acid AGM and gel) counterparts with the same capacity (ampHours). Make sure to use a battery which is safe to discharge and transport.">Lithium-ion</a>
         
-                            <a tabindex="14" class="btn btn-info opacity-75" data-bs-custom-class="custom-popover" data-bs-toggle="popover" data-trigger="manual" data-bs-title="Lead-acid AGM" data-bs-content="A lead-acid battery is about twice as heavy, but half the price of a lithium-ion battery. This chemistry does slowly lose capaicty with continued use or poor maintenance. AGM lead-acid batteries are recommended as these are sealed and so can be tipped over and bumped without acid spilling from the battery.">Lead-acid AGM</a>
+                            <a tabindex="14" class="btn btn-info opacity-75" data-bs-custom-class="custom-popover" data-bs-toggle="popover" data-trigger="manual" data-bs-title="Lead-acid & AGM" data-bs-content="A lead-acid battery is about twice as heavy, but half the price of a lithium-ion battery. This chemistry does slowly lose capaicty with continued use or poor maintenance. AGM lead-acid batteries are recommended as these are sealed and so can be tipped over and bumped without acid spilling from the battery.">Lead-acid AGM</a>
 
-                            <a tabindex="14" class="btn btn-info opacity-75" data-bs-custom-class="custom-popover" data-bs-toggle="popover" data-trigger="manual" data-bs-title="Gel" data-bs-content="Gel batteries are similar to lead-acid batteries in weight and price. These batteries are often sealed and if so should be suitable for use in the field. This chemistry is more susceptible to losing charge in the cold than other chemistries.">Gel</a>
+                            <a tabindex="14" class="btn btn-info opacity-75" data-bs-custom-class="custom-popover" data-bs-toggle="popover" data-trigger="manual" data-bs-title="Gel" data-bs-content="Gel batteries are similar to lead-acid and AGM batteries in weight and price. These batteries are often sealed and if so should be suitable for use in the field. This chemistry is more susceptible to losing charge in the cold than other chemistries.">Gel</a>
                         </div>
                     </div>
                     <div class="m-3">
                         <div class="container">
-                            <p class="condensed-para">The system run time is dependent on the capacity (ampHours) of the battery and camera settings. The number of nights it is possible to record will be dependent on the battery temperature, night length and settings. Higher battery capacities mean the battery will weigh more. During testing an 11kg battery seems to be a good compromise between allowing navigation of a woodland with the battery in a backpack and a good system run time. Enter the amp hours below to estimate the run time for the system set at 30FPS in summer (10hr nights). After running some tests with lithium batteries this calculation is known to be a significant under-estimation, the cameras will run for longer than stated here. Properly representative run times will be provided very soon.</p>
+                            <p class="condensed-para">The system run time is dependent on the capacity (ampHours) of the battery and camera settings. The number of nights it is possible to record will be dependent on the battery temperature, night length and settings. Higher battery capacities mean the battery will weigh more. During testing an 11kg battery seems to be a good compromise between allowing navigation of a woodland with the battery in a backpack and a good system run time. Enter the amp hours below to estimate the run time for the system set at 30FPS in summer (9hr nights).</p>
                             <div>
                                 <label for="ampHours" class="form-label form-label2">12v Battery Amp Hours:</label>
                                 <!-- Add Bootstrap classes to the input box -->
@@ -40,12 +40,13 @@
     
           // Define the base values
           var BaseVoltage = 12; // 12v as the base value
-          var Consumptionat30 = 4.4; // Watts
-          var Nights = 10; // 10 hours
+          var Consumptionat30 = 1.9; // Watts - based on run Jun 9th 2024
+        //   var Consumptionat30 = 4.4; // Watts
+          var NightLength = 9; // in hours
     
           // Calculate the run time based on the ratio
           var calculatedHours = (AmpHours * BaseVoltage) / Consumptionat30;
-          var calculatedRunTime = calculatedHours / Nights;
+          var calculatedRunTime = calculatedHours / NightLength;
     
           // Display the result
           document.getElementById('result').innerHTML = 'Estimated run time: ' + calculatedRunTime.toFixed(2) + ' nights';
